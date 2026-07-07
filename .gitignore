@@ -1,0 +1,6 @@
+outputs/
+__pycache__/
+*.py[cod]
+.venv/
+assets/smpl/*.pkl
+assets/smpl/models/

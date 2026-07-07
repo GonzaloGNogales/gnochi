@@ -1,0 +1,7 @@
+numpy<2
+roma
+scipy
+smplx
+torch
+tqdm
+typing_extensions
