@@ -27,8 +27,8 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Paper-SCA%202026-b31b1b.svg" alt="Paper">
   </a>
-  <a href="https://YOUR-PROJECT-PAGE">
-    <img src="https://gonzalogn.com/gnochi/" alt="Project page">
+  <a href="https://gonzalogn.com/gnochi/">
+    <img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project page">
   </a>
   <img src="https://img.shields.io/badge/Dataset-coming%20soon-lightgrey.svg" alt="Dataset coming soon">
 </p>
