@@ -19,6 +19,10 @@
   <sup>*</sup>Equal contribution &nbsp;&middot;&nbsp; <sup>&dagger;</sup>Work done prior to joining Amazon
 </p>
 
+<h2 align="center">
+  <sup>SCA 2026 &middot; Computer Graphics Forum</b>
+</h2>
+
 <p align="center">
   <a href="#">
     <img src="https://img.shields.io/badge/Paper-SCA%202026-b31b1b.svg" alt="Paper">
@@ -37,11 +41,8 @@
   GNOCHI is a generative model for close 3D human-human interactions. Given one posed SMPL avatar as a conditioning body, the model samples plausible reacting poses for a second avatar. The release model uses a conditional variational autoencoder (cVAE) to generate diverse interaction candidates and an optional CapFix refinement module to reduce inter-body collisions while preserving plausible body poses.
 </p>
 
-This repository contains the inference-only release for **GNOCHI**, prepared so users can sample interacting poses from a conditioning avatar pose or run the bundled examples without preparing their own data.
-
 Important notes:
 
-- inference only
 - one conditioning avatar pose is required
 - bundled examples are included for quick testing
 - `cvae.torch` is required
@@ -63,16 +64,6 @@ python -m pip install -r requirements.txt
 ```
 
 This is the recommended NVIDIA GPU setup. The command above uses the official PyTorch CUDA 12.8 wheels. If your GPU driver does not support CUDA 12.8, use the official PyTorch install selector at <https://pytorch.org/get-started/locally/> and replace the PyTorch install command with the CUDA version recommended for your machine.
-
-`requirements.txt` also lists `torch`; installing CUDA-enabled PyTorch first ensures pip keeps that GPU build while installing the remaining dependencies.
-
-Verify that PyTorch can see your GPU:
-
-```bash
-python -c "import torch; print(torch.__version__); print('CUDA available:', torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU only')"
-```
-
-If `CUDA available` prints `True`, the environment is ready to run GNOCHI on GPU with `--device cuda`.
 
 If you do not have an NVIDIA GPU, install the CPU-only environment instead:
 
