@@ -227,9 +227,9 @@ The top-level `summary.json` stores the run configuration, weights, seed, and ge
 
 ## License
 
-The GNOCHI codebase and released model weights are published under a Creative Commons Attribution license (CC-BY).
+The GNOCHI codebase and any released model weights are published under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (CC-BY-NC-ND-4.0).
 
-You are free to use, share, and adapt the released code and weights, provided that appropriate credit is given to the authors and the GNOCHI paper is cited.
+You are free to share the released code and weights for non-commercial purposes, provided that appropriate credit is given to the authors and the GNOCHI paper is cited. You may not share adapted material.
 
 Third-party assets, including SMPL body model files, are subject to their own licenses and are not redistributed here.
 

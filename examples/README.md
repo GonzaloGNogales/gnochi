@@ -1,13 +1,15 @@
 # Example Conditioning Poses
 
-These JSON files are some conditioning pose examples so users can test inference without preparing their own avatar.
+Coming soon. Stay tuned!
 
-The folder contains:
+These JSON files will provide conditioning pose examples so users can test inference without preparing their own avatar.
+
+The folder will contain:
 
 - 5 in-distribution interaction examples, prefixed with `id_`
 - 5 out-of-distribution Mixamo motion examples, prefixed with `ood_`
 
-Included ID examples:
+Planned ID examples:
 
 - `id_dance14_frame000075.json`
 - `id_fight16_frame000010.json`
@@ -15,7 +17,7 @@ Included ID examples:
 - `id_sidehug37_frame000029.json`
 - `id_talk22_frame000037.json`
 
-Included OOD examples:
+Planned OOD examples:
 
 - `ood_hiphop_frame000002.json`
 - `ood_cumbia_frame000000.json`
@@ -23,13 +25,13 @@ Included OOD examples:
 - `ood_breakdance2_frame000004.json`
 - `ood_swingkettleball_frame000002.json`
 
-Run one example:
+Run one example once the files are available:
 
 ```bash
 python -m gnochi.infer --input examples/ood_hiphop_frame000002.json --num-generations 10
 ```
 
-Run all examples:
+Run all examples once the files are available:
 
 ```bash
 python -m gnochi.infer --input-dir examples --num-generations 10 --output-dir outputs/examples
